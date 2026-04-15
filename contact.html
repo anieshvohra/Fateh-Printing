@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Fateh Printing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">FATEH <span>PRINTING</span></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+
+      <!-- MOBILE CTA -->
+      <a href="javascript:void(0);" onclick="openModal()" class="mobile-cta">
+        Get Quote
+      </a>
+    </nav>
+
+    <!-- DESKTOP CTA -->
+    <a href="javascript:void(0);" onclick="openModal()" class="nav-cta">
+      Get a Quote
+    </a>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  </div>
+</header>
+
+<!-- CONTACT HERO -->
+<section class="contact-hero">
+  <div class="contact-content">
+
+    <h1>READY TO BRING YOUR PROJECTS TO LIFE?</h1>
+
+    <p>
+      Get a free quote today and discover why businesses trust
+      Fateh Printing for their printing needs.
+    </p>
+
+    <div class="contact-buttons">
+
+      <!-- FIXED BUTTON STYLE -->
+      <button onclick="openModal()" class="quote-btn">
+        Request a Quote →
+      </button>
+
+      <a href="tel:+16132634502" class="btn secondary">Call Us</a>
+      <a href="mailto:info@fatehprinting.com" class="btn secondary">Email Us</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>FATEH PRINTING</h3>
+      <p>
+        Your trusted partner for professional printing services.
+        Quality, speed, and excellence in every project.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <p>Business Cards</p>
+      <p>Posters, Prints & Decals</p>
+      <p>Banners & Signs</p>
+      <p>Brochures & Catalogs</p>
+      <p>Custom Apparel Printings</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>4220 23rd Street Northeast,<br>Calgary AB T2E 6X7</p>
+      <p>+1 (613)-263-4502</p>
+      <p>info@fatehprinting.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Fateh Printing. All rights reserved.</p>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- QUOTE MODAL -->
+<div id="quoteModal" class="modal">
+  <div class="modal-box">
+
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+
+    <h2>Get a Quote</h2>
+    <p>Fill out the form and we’ll get back to you within 24 hours.</p>
+
+    <form action="https://formsubmit.co/info@fatehprinting.com" method="POST">
+
+      <input type="hidden" name="_subject" value="New Quote Request - Fateh Printing">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="service" placeholder="Product/Service Type">
+      </div>
+
+      <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn primary">Submit Quote Request</button>
+        <button type="button" class="btn secondary" onclick="closeModal()">Cancel</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

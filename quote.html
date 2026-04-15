@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote - Fateh Printing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">FATEH <span>PRINTING</span></div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="#" onclick="openModal(); return false;" class="nav-cta">
+      GET A QUOTE TODAY & DESIGN WITH US!
+    </a>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<!-- QUOTE SECTION -->
+<section class="quote-section">
+  <div class="quote-container">
+
+    <h2>Get a quote</h2>
+    <p>Fill out the form and we’ll get back to you within 24 hours.</p>
+
+    <form action="https://formsubmit.co/info@fatehprinting.com" method="POST">
+
+      <!-- FormSubmit Settings -->
+      <input type="hidden" name="_subject" value="New Quote Request - Fateh Printing">
+      <input type="hidden" name="_captcha" value="false">
+
+      <h4>Contact Information</h4>
+
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="service" placeholder="Product / Service Type">
+      </div>
+
+      <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn primary">Submit Quote Request</button>
+        <a href="contact.html" class="btn secondary">Cancel</a>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>FATEH PRINTING</h3>
+      <p>Your trusted partner for professional printing services.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <p>Business Cards</p>
+      <p>Posters & Prints</p>
+      <p>Banners & Signs</p>
+      <p>Brochures & Catalogs</p>
+      <p>Custom Apparel</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>4220 23rd Street NE, Calgary</p>
+      <p>+1 (613)-263-4502</p>
+      <p>info@fatehprinting.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Fateh Printing. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
